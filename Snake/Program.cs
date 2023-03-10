@@ -47,6 +47,7 @@ char[] Framing(char symbol, byte length)
 /////////////////////////////////////////////////////////////////////////////////////
 Console.CursorVisible = false;
 Console.Clear();
+
 byte width = 20,
         height = 10;
 

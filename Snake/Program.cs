@@ -20,7 +20,7 @@
 
 void Print(char[][] plc, ushort lvl, ushort scr)
 {
-    Console.Clear();
+    Console.SetCursorPosition(0,0);
     Console.Write(plc[0]);
     Console.WriteLine($" Level: {lvl}");
     Console.Write(plc[1]);
@@ -45,7 +45,8 @@ char[] Framing(char symbol, byte length)
 }
 
 /////////////////////////////////////////////////////////////////////////////////////
-
+Console.CursorVisible = false;
+Console.Clear();
 byte width = 20,
         height = 10;
 
